@@ -1,9 +1,13 @@
 // Importing required modules
 const cors = require('cors');
 const express = require('express');
-
+const passport = require('passport');
+const localStrategy = require('passport-local').Strategy;
+const bcrypt = require('bcrypt');
 // parse env variables
 require('dotenv').config();
+
+require("./helpers/db/mongodb.js")();
 
 // Configuring port
 const port = process.env.PORT || 9000;
