@@ -5,7 +5,7 @@
   "renderingMode": "universal",
   "deployTarget": "server",
   "isConfigured": {
-    "client": false,
+    "client": true,
     "server": true
   }
 }
